@@ -2509,65 +2509,7 @@ Eu acabei de pedir minha segunda Amostra Grátis!                            </p
     </style>
 
     <script async="" src="./index_files/js(2)"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-137749396-25');
-
-        var anchors = document.getElementsByTagName("a");
-
-        function getParameterByName(name) {
-            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-                results = regex.exec(location.search);
-            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-        }
-
-        var source = getParameterByName('aff_sub2');
-
-        for (var i = 0; i < anchors.length; i++) {
-            anchors[i].href = '/click?pid=9&offer_id=4&sub1=display&sub2=' + source
-        }
-
-        function prepareFrame(link) {
-            var ifrm = document.createElement("iframe");
-            ifrm.setAttribute("src", link);
-            ifrm.style.width = "2px";
-            ifrm.style.height = "2px";
-            document.body.appendChild(ifrm);
-        }
-
-        var source2 = getParameterByName('aff_sub2');
-
-        var link = '/click?pid=9&offer_id=4&sub1=display&sub2=' + source2;
-
-        prepareFrame(link)
-
-        var back_redirect_back_link = '/click?pid=9&offer_id=4&sub1=display&sub2=' + source2;
-
-        history.pushState({}, "", location.href);
-        history.pushState({}, "", location.href);
-
-        window.onpopstate = function() {
-            setTimeout(function() {
-                location.href = back_redirect_back_link;
-            }, 1);
-        };
-
-        var today = new Date();
-        var dd = String(today.getDate()).padStart(2, '0');
-        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-        var yyyy = today.getFullYear();
-
-        today = dd + '/' + mm + '/' + yyyy;
-
-        document.getElementById('dadata').innerHTML = today;
-    </script><iframe src="./index_files/click.html" style="width: 2px; height: 2px;"></iframe>
+  
 
 
 
